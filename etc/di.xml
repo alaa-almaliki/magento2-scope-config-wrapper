@@ -4,11 +4,4 @@
                 type="Alaa\ScopeConfig\Model\ScopeConfigReader"/>
     <preference for="Alaa\ScopeConfig\Model\ScopeConfigWriterInterface"
                 type="Alaa\ScopeConfig\Model\ScopeConfigWriter"/>
-    <type name="Magento\Framework\Console\CommandListInterface">
-        <arguments>
-            <argument name="commands" xsi:type="array">
-                <item name="integrationTestCommand" xsi:type="object">Alaa\ScopeConfig\Console\Command\IntegrationTestCommand</item>
-            </argument>
-        </arguments>
-    </type>
 </config>
