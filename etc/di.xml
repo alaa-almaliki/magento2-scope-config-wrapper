@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Alaa\ScopeConfig\Model\ScopeConfigReaderInterface"
+                type="Alaa\ScopeConfig\Model\ScopeConfigReader"/>
+    <preference for="Alaa\ScopeConfig\Model\ScopeConfigWriterInterface"
+                type="Alaa\ScopeConfig\Model\ScopeConfigWriter"/>
+    <type name="Magento\Framework\Console\CommandListInterface">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="integrationTestCommand" xsi:type="object">Alaa\ScopeConfig\Console\Command\IntegrationTestCommand</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
