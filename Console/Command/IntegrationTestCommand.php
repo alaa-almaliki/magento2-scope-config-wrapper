@@ -55,5 +55,6 @@ class IntegrationTestCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         $this->integrationTest->test();
+        $this->integrationTest->deleteTestData();
     }
 }

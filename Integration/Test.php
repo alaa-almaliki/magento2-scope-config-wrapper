@@ -159,6 +159,16 @@ class Test
     }
 
     /**
+     * Deletes test data
+     */
+    public function deleteTestData()
+    {
+        foreach ($this->paths as $path) {
+            $this->scopeConfigWriter->deleteConfig($path['path'], $path['scope'], $path['scope_id']);
+        }
+    }
+
+    /**
      * @param string $scope
      * @param string $storeCode
      * @return string
