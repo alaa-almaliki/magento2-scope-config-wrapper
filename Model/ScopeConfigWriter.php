@@ -85,7 +85,7 @@ class ScopeConfigWriter implements ScopeConfigWriterInterface
      */
     public function deleteWebsiteConfig($path, $scopeId)
     {
-        $this->deleteConfig($path, $scope = ScopeInterface::SCOPE_WEBSITES, $scopeId);
+        $this->deleteConfig($path, ScopeInterface::SCOPE_WEBSITES, $scopeId);
     }
 
     /**
@@ -94,7 +94,7 @@ class ScopeConfigWriter implements ScopeConfigWriterInterface
      */
     public function deleteStoreConfig($path, $scopeId)
     {
-        $this->deleteConfig($path, $scope = ScopeInterface::SCOPE_STORES, $scopeId);
+        $this->deleteConfig($path, ScopeInterface::SCOPE_STORES, $scopeId);
     }
 
     /**
@@ -102,7 +102,7 @@ class ScopeConfigWriter implements ScopeConfigWriterInterface
      */
     public function deleteDefaultConfig($path)
     {
-        $this->deleteConfig($path, $scope = ScopeConfigInterface::SCOPE_TYPE_DEFAULT, 0);
+        $this->deleteConfig($path, ScopeConfigInterface::SCOPE_TYPE_DEFAULT, 0);
     }
 
     /**
