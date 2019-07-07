@@ -26,3 +26,8 @@ a wrapper module around scope config reader and writer
     - `$reader->getStoreConfigFlag(string $path, $scopeId = null);`
     - `$reader->getConfigValue(string $path, string $scope = ScopeConfigInterface::SCOPE_TYPE_DEFAULT, $scopeId = null);`
     - `$reader->getConfigFlag(string $path, string $scope = ScopeConfigInterface::SCOPE_TYPE_DEFAULT, $scopeId = null);`
+
+# Integration test
+clear cache and run the below command
+
+`php -f bin/magento alaa:scope-config:test`
